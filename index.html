@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktualisasi SI-GESIT | Dinas Tenaga Kerja Gianyar</title>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f3f4f6 0%, #e0f2fe 50%, #fef3c7 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #1f2937;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.12);
+        }
+
+        .logo-container img {
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+            max-width: 120px;
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .menu-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+        }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+
+    <!-- Header Section -->
+    <header class="text-center mb-10 animate-fade-in">
+        <div class="logo-container flex justify-center mb-6">
+            <img src="https://i.imgur.com/TOc60KG.png" alt="Logo Instansi" onerror="this.src='https://via.placeholder.com/120x120?text=LOGO'">
+        </div>
+        <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-800 mb-2">
+            Aktualisasi SI-GESIT
+        </h1>
+        <p class="text-slate-500 font-medium text-sm md:text-base">
+            Selamat datang! ini adalah inovasi SI-GESIT
+        </p>
+    </header>
+
+    <!-- Main Menu Layout -->
+    <main class="w-full max-w-md space-y-4 animate-fade-in" style="animation-delay: 0.2s;">
+        
+        <!-- Menu 1 -->
+        <a href="https://forms.gle/K8fQnYom5RvWG8t89" target="_blank" class="glass-card flex items-center p-4 rounded-3xl w-full group">
+            <div class="menu-icon shadow-lg group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-clipboard-list text-xl"></i>
+            </div>
+            <div class="ml-5 flex-1">
+                <h2 class="font-semibold text-slate-700">Pendaftaran Pelatihan Gratis</h2>
+                <p class="text-xs text-slate-400">Formulir pendaftaran online</p>
+            </div>
+            <div class="text-slate-300 group-hover:text-blue-500 transition-colors pr-2">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </a>
+
+        <!-- Menu 2 -->
+        <a href="https://docs.google.com/spreadsheets/d/11geeAXardz8cHNmQ5biOvmJzTwEve8jO9CDn_qeL7Ac/edit?usp=sharing" target="_blank" class="glass-card flex items-center p-4 rounded-3xl w-full group">
+            <div class="menu-icon shadow-lg group-hover:scale-110 transition-transform bg-gradient-to-br from-emerald-500 to-teal-600">
+                <i class="fa-solid fa-database text-xl"></i>
+            </div>
+            <div class="ml-5 flex-1">
+                <h2 class="font-semibold text-slate-700">Database Peserta</h2>
+                <p class="text-xs text-slate-400">Data rekapitulasi peserta</p>
+            </div>
+            <div class="text-slate-300 group-hover:text-emerald-500 transition-colors pr-2">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </a>
+
+        <!-- Menu 3 -->
+        <a href="https://lookerstudio.google.com/reporting/88e4a6cf-fa4a-4d4b-87e0-1d4bd23a73fc" target="_blank" class="glass-card flex items-center p-4 rounded-3xl w-full group">
+            <div class="menu-icon shadow-lg group-hover:scale-110 transition-transform bg-gradient-to-br from-indigo-500 to-purple-600">
+                <i class="fa-solid fa-chart-line text-xl"></i>
+            </div>
+            <div class="ml-5 flex-1">
+                <h2 class="font-semibold text-slate-700">Dashboard Monitoring</h2>
+                <p class="text-xs text-slate-400">Visualisasi data & laporan</p>
+            </div>
+            <div class="text-slate-300 group-hover:text-indigo-500 transition-colors pr-2">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </a>
+
+        <!-- Menu 4 -->
+        <a href="https://script.google.com/macros/s/AKfycbw0ATpcK-PY8Oebf7kO3YAcc0ogbMYm-HZEFqj7q6ujJCIBsDcahIkb0gmHzBhNIsnAQQ/exec" target="_blank" class="glass-card flex items-center p-4 rounded-3xl w-full group">
+            <div class="menu-icon shadow-lg group-hover:scale-110 transition-transform bg-gradient-to-br from-orange-500 to-red-600">
+                <i class="fa-solid fa-house-chimney-user text-xl"></i>
+            </div>
+            <div class="ml-5 flex-1">
+                <h2 class="font-semibold text-slate-700">Input Hasil Visit Rumah</h2>
+                <p class="text-xs text-slate-400">Laporan kunjungan lapangan</p>
+            </div>
+            <div class="text-slate-300 group-hover:text-orange-500 transition-colors pr-2">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </a>
+
+        <!-- Menu 5 -->
+        <a href="https://script.google.com/macros/s/AKfycbwL1WZv77sEGioKD54vjY_L4b7kSnHB58o47v-_HDsoATELlrF48fwhJuNsYkS9Cf80/exec" target="_blank" class="glass-card flex items-center p-4 rounded-3xl w-full group">
+            <div class="menu-icon shadow-lg group-hover:scale-110 transition-transform bg-gradient-to-br from-slate-600 to-slate-800">
+                <i class="fa-solid fa-box-archive text-xl"></i>
+            </div>
+            <div class="ml-5 flex-1">
+                <h2 class="font-semibold text-slate-700">Arsip Digital Peserta</h2>
+                <p class="text-xs text-slate-400">Penyimpanan dokumen digital</p>
+            </div>
+            <div class="text-slate-300 group-hover:text-slate-600 transition-colors pr-2">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </a>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-auto pt-12 pb-6 animate-fade-in" style="animation-delay: 0.4s;">
+        <div class="bg-white/50 backdrop-blur-sm px-6 py-2 rounded-full border border-white/40 shadow-sm">
+            <p class="text-xs font-semibold text-slate-500 tracking-wide uppercase">
+                Powered by <span class="text-blue-600">Dinas Tenaga Kerja Gianyar</span>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth entrance for cards
+        document.querySelectorAll('.glass-card').forEach((card, index) => {
+            card.style.animation = `fadeIn 0.5s ease-out forwards ${0.3 + (index * 0.1)}s`;
+            card.style.opacity = '0';
+        });
+    </script>
+</body>
+</html>
