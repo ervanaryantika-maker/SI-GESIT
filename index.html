@@ -139,6 +139,88 @@
         .card-arrow { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; transition: all 0.25s; }
         .project-card:hover .card-arrow { transform: translateX(3px) translateY(-3px); }
 
+        /* ===== VIDEO SECTION STYLES ===== */
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .video-wrapper::before {
+            content: "";
+            position: absolute;
+            inset: -10px;
+            background: linear-gradient(135deg, rgba(29,184,122,0.18), rgba(14,165,233,0.12));
+            border-radius: 28px;
+            z-index: 0;
+        }
+        .video-frame-outer {
+            position: relative;
+            z-index: 1;
+            background: white;
+            border-radius: 22px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1), 0 0 0 1px rgba(29,184,122,0.12);
+        }
+        .video-frame-bar {
+            height: 5px;
+            background: linear-gradient(90deg, #1db87a, #0ea5e9, #1db87a);
+            background-size: 200% 100%;
+            animation: shimmer 3s linear infinite;
+        }
+        .video-frame-titlebar {
+            padding: 14px 20px 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .video-frame-dots { display: flex; gap: 6px; }
+        .video-frame-dots span { width: 12px; height: 12px; border-radius: 50%; display: block; }
+        .video-embed-wrap {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 */
+            background: #0d1b2a;
+        }
+        .video-embed-wrap iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+        .video-meta-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin-top: 2rem;
+        }
+        @media (max-width: 600px) {
+            .video-meta-row { grid-template-columns: 1fr; }
+        }
+        .video-meta-card {
+            background: white;
+            border-radius: 16px;
+            padding: 18px 20px;
+            border: 1px solid rgba(29,184,122,0.12);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+        .video-meta-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        /* ===== END VIDEO SECTION STYLES ===== */
+
         footer { background: var(--navy); padding: 3rem 2rem; position: relative; overflow: hidden; }
         footer::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--green), transparent); }
         .footer-inner { max-width: 1280px; margin: 0 auto; text-align: center; }
@@ -209,6 +291,7 @@
             <div class="nav-links hidden md:flex">
                 <a href="#latar-belakang" class="nav-link"><i class="fa-solid fa-book-open fa-xs"></i> Latar Belakang</a>
                 <a href="#roadmap" class="nav-link"><i class="fa-solid fa-map-location-dot fa-xs"></i> Roadmap</a>
+                <a href="#video-aktualisasi" class="nav-link"><i class="fa-solid fa-circle-play fa-xs"></i> Video</a>
                 <a href="#menu-project" class="nav-cta ripple-btn"><i class="fa-solid fa-rocket fa-sm"></i> Menu Latsar</a>
             </div>
             <a href="#menu-project" class="nav-cta md:hidden ripple-btn">
@@ -441,6 +524,91 @@
                     <div style="font-size:0.73rem;color:#64748b;">Penilaian dampak &amp; pengembangan lanjut</div>
                 </div>
             </div>
+        </div>
+    </section>
+
+
+    <!-- ===== SECTION: VIDEO AKTUALISASI ===== -->
+    <section id="video-aktualisasi" style="position:relative; overflow:hidden; background: linear-gradient(180deg, #f0f6f2 0%, #ffffff 100%);">
+        <div class="orb" style="width:420px;height:420px;background:radial-gradient(circle,rgba(29,184,122,0.13) 0%,transparent 70%);top:-80px;right:-60px;animation:float1 11s ease-in-out infinite;position:absolute;"></div>
+        <div class="orb" style="width:300px;height:300px;background:radial-gradient(circle,rgba(239,68,68,0.08) 0%,transparent 70%);bottom:-40px;left:-40px;animation:float2 9s ease-in-out infinite;position:absolute;"></div>
+
+        <div style="max-width:1280px; margin:0 auto; padding:6rem 2rem; position:relative; z-index:1;">
+
+            <!-- Section Header -->
+            <div class="section-header reveal">
+                <div class="section-tag" style="background:rgba(239,68,68,0.08);color:#dc2626;border-color:rgba(239,68,68,0.2);">
+                    <i class="fa-brands fa-youtube fa-xs"></i>
+                    Video Aktualisasi
+                </div>
+                <h2 class="section-title">Laporan Video SI-GESIT</h2>
+                <p class="section-desc">Dokumentasi laporan aktualisasi SI-GESIT dalam format video sebagai bukti implementasi inovasi di Dinas Tenaga Kerja Kabupaten Gianyar.</p>
+            </div>
+
+            <!-- Video Embed -->
+            <div class="video-wrapper reveal">
+                <div class="video-frame-outer">
+                    <div class="video-frame-bar"></div>
+                    <div class="video-frame-titlebar">
+                        <div class="video-frame-dots">
+                            <span style="background:#ef4444;"></span>
+                            <span style="background:#f59e0b;"></span>
+                            <span style="background:#10b981;"></span>
+                        </div>
+                        <span style="font-size:0.78rem;color:#94a3b8;font-weight:600;flex:1;">Video Aktualisasi SI-GESIT — Latsar CPNS Angkatan 1 Tahun 2026</span>
+                        <div style="display:flex;align-items:center;gap:6px;background:#fef2f2;padding:5px 12px;border-radius:8px;">
+                            <i class="fa-brands fa-youtube" style="color:#dc2626;font-size:0.75rem;"></i>
+                            <span style="font-size:0.72rem;font-weight:700;color:#dc2626;">YouTube</span>
+                        </div>
+                    </div>
+                    <div class="video-embed-wrap">
+                        <!-- 
+                            GANTI "YOUR_YOUTUBE_VIDEO_ID" dengan ID video YouTube Anda.
+                            Contoh: jika URL video adalah https://www.youtube.com/watch?v=dQw4w9WgXcQ
+                            maka ID-nya adalah: dQw4w9WgXcQ
+                        -->
+                        <iframe
+                            src="https://www.youtube.com/embed/sXwLHzLsFMo?rel=0&modestbranding=1&color=white"
+                            title="Video Aktualisasi SI-GESIT — Latsar CPNS Angkatan 1 Tahun 2026"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Meta Cards -->
+            <div class="video-meta-row reveal">
+                <div class="video-meta-card">
+                    <div class="video-meta-icon" style="background:linear-gradient(135deg,#fef2f2,#fecaca);">
+                        <i class="fa-brands fa-youtube" style="color:#dc2626;font-size:1.1rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="font-weight:800;font-size:0.88rem;color:#0d1b2a;margin-bottom:4px;">Platform</h4>
+                        <p style="font-size:0.78rem;color:#64748b;line-height:1.5;">Dipublikasikan di YouTube sebagai media pelaporan dan dokumentasi resmi aktualisasi.</p>
+                    </div>
+                </div>
+                <div class="video-meta-card">
+                    <div class="video-meta-icon" style="background:linear-gradient(135deg,#f0fdf4,#bbf7d0);">
+                        <i class="fa-solid fa-film" style="color:#059669;font-size:1rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="font-weight:800;font-size:0.88rem;color:#0d1b2a;margin-bottom:4px;">Konten Video</h4>
+                        <p style="font-size:0.78rem;color:#64748b;line-height:1.5;">Menampilkan proses implementasi, demonstrasi sistem, dan dampak nyata SI-GESIT di lapangan.</p>
+                    </div>
+                </div>
+                <div class="video-meta-card">
+                    <div class="video-meta-icon" style="background:linear-gradient(135deg,#eff6ff,#bfdbfe);">
+                        <i class="fa-solid fa-graduation-cap" style="color:#2563eb;font-size:1rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="font-weight:800;font-size:0.88rem;color:#0d1b2a;margin-bottom:4px;">Bukti Aktualisasi</h4>
+                        <p style="font-size:0.78rem;color:#64748b;line-height:1.5;">Bagian dari penilaian Latsar CPNS Angkatan 1 Tahun 2026 sebagai bukti penerapan nilai BerAKHLAK.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
